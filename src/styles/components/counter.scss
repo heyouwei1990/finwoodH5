@@ -1,0 +1,53 @@
+.counter-component {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  min-width: 96px;
+}
+.counter-show {
+  float: left;
+}
+.counter-show input {
+  height: 23px;
+  line-height: 23px;
+  width: 40px;
+  outline: none;
+  text-align: center;
+  border:0;
+  background-color: transparent;
+}
+.counter-btn {
+  border: 1px solid #eee;
+  float: left;
+  height: 24px;
+  width: 28px;
+  /*line-height: 22px;
+  text-align: center;*/
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+}
+.counter-btn:before{
+  content: '';
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 10px;
+  height:1px;
+  background-color: #666;
+  transform: translate(-50%, -50%);
+}
+.counter-btn:nth-last-child(1):after{
+  content: '';
+  position: absolute;
+  left:50%;
+  top:50%;
+  height: 10px;
+  width:1px;
+  background-color: #666;
+  transform: translate(-50%, -50%);
+}
+.counter-btn:active {
+  background: #F5F5F5;
+}

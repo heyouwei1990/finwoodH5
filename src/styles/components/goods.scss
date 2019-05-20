@@ -1,0 +1,99 @@
+.goods-list{
+  overflow: hidden;
+  padding: px2rem(15px) 15px;
+  background-color: #fff;
+  &> li{
+    @include bb;
+    padding: px2rem(10px) 0;
+  }
+
+  &> li:nth-last-of-type(1):after {
+    display: none;
+  }
+
+
+  .icon-renzheng {
+    color: #f8c13b;
+    position: relative;
+    margin-left:3px;
+  }
+  .goods-dl > dd {
+    padding-bottom:50px;
+  }
+  .dd-bottom {
+    @include fj;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 22px;
+  }
+}
+.goods-dl {
+  margin: px2rem(-8px) -15px;
+  position: relative;
+  padding:px2rem(10px) 15px px2rem(10px) px2rem(262px);
+  min-height: px2rem(222px);
+  > dt {
+    width: px2rem(200px);
+    height: px2rem(200px);
+    margin-right: px2rem(26px);
+    overflow: hidden;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  > dt img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    height: 100%;
+  }
+  > dd {
+    position: relative;
+    min-height: px2rem(206px);
+    width: 100%;
+  }
+  .desc {
+    width: 100%;
+    max-height: 44px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .seller {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:22px;
+    z-index:2;
+  }
+  .seller>span{
+    flex: 1;
+    overflow: hidden;
+  }
+  .price {
+    color: $danger;
+    font-size: 14px;
+  }
+  .online-time {
+    color: #999;
+    font-size: 12px;
+  }
+}
